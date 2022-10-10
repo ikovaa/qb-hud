@@ -86,12 +86,12 @@
   .square {
     left: 2.4vh!important;
     bottom: 6.1%!important;
-	  width: 29.3vh!important;
+      width: 29.3vh!important;
   }
   .circle {
     left: 3.6vh!important;
-	  width: 27.6vh!important;
-	  bottom: 6.9%!important;
+      width: 27.6vh!important;
+      bottom: 6.9%!important;
   }
 }
 
@@ -133,12 +133,12 @@
   .square {
     left: 2.3vh!important;
     bottom: 6.1%!important;
-	  width: 29.3vh!important;
+      width: 29.3vh!important;
   }
   .circle {
     left: 3.5vh!important;
-	  width: 27.6vh!important;
-	  bottom: 6.9%!important;
+      width: 27.6vh!important;
+      bottom: 6.9%!important;
   }
 }
 
@@ -183,8 +183,8 @@
   }
   .circle {
     left: 3.5vh!important;
-	  width: 27.6vh!important;
-	  bottom: 6.7%!important;
+      width: 27.6vh!important;
+      bottom: 6.7%!important;
   }
 }
 
@@ -229,8 +229,8 @@
   }
   .circle {
     left: 2.7vh!important;
-	  width: 27.6vh!important;
-	  bottom: 7%!important;
+      width: 27.6vh!important;
+      bottom: 7%!important;
   }
 }
 
@@ -275,8 +275,8 @@
   }
   .circle {
     left: 3.2vh!important;
-	  width: 27.6vh!important;
-	  bottom: 7%!important;
+      width: 27.6vh!important;
+      bottom: 7%!important;
   }
 }
 
@@ -367,7 +367,7 @@
   }
   .circle {
     left: 4vh!important;
-	  width: 27.6vh!important;
-	  bottom: 6.9%!important;
+    width: 27.6vh!important;
+    bottom: 6.9%!important;
   }
 }

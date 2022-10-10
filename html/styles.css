@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.cdnfonts.com/css/pricedown');@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 
+:root {
+    --primary-color: rgba(220, 2, 109, 1);
+    --secondary-color: rgba(220, 2, 109, .7);
+    --tertiary-color: rgba(220, 2, 109, .3);
+
+    --first-plain: rgba(35, 39, 42, 1);
+    --second-plain: rgba(35, 39, 42, .5);
+    --background-color: rgb(44, 47, 51);
+}
+
+
 /* Menu */
-div#openmenu { display: none; position: absolute; width: 50%; top: 45%; left: 50%; transform: translate(-50%,-50%); }
+div#openmenu { display: none; position: absolute; width: 50%; top: 45%; left: 50%; transform: translate(-50%,-50%); user-select: none; }
 .brand-logo { width: 25%; } /* when using an svg all you need to change is the width and it will resize it */
 
 /* Menu tab & panel styles */
 .text-tabcolor { color: rgb(255, 255, 255)!important; }
-.bg-active-tab { background: rgb(23 23 23)!important; }
-.bg-panel { background: rgb(30 30 30)!important; }
+.bg-active-tab { background: var(--background-color)!important; }
+.bg-panel { background: var(--first-plain)!important; }
 .q-tab-panels { border-top-right-radius: 12px!important; border-bottom-right-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
 .q-splitter__panel.q-splitter__before { border-top-left-radius: 12px!important; border-bottom-left-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
 .q-tabs--vertical.q-tabs--not-scrollable .q-tabs__content { border-top-left-radius: 12px!important; border-bottom-left-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
@@ -19,9 +30,9 @@ div#openmenu { display: none; position: absolute; width: 50%; top: 45%; left: 50
 
 /* Menu buttons & checkboxes & toggle switch icons styles */
 .text-textbutton { color: rgb(0, 0, 0)!important; }
-.bg-bgbutton { background: rgb(220 20 60)!important; }
+.bg-bgbutton { background: var(--primary-color)!important; }
 .q-checkbox__inner { color: rgb(255 255 255 / 70%)!important; }
-.text-checkbox { color: rgb(220 20 60)!important; }
+.text-checkbox { color: var(--primary-color)!important; }
 .q-checkbox__svg { color: rgb(0, 0, 0)!important; }
 .q-checkbox__inner--truthy .q-checkbox__bg { box-shadow: 0px 0px 3px 3px rgb(220 20 60 / 15%)!important; } /* if you want the checkboxes to have a glow/shadow */
 .text-toggleicons { color: rgb(0, 0, 0)!important; }
@@ -130,21 +141,21 @@ altitude:after {
 speed {
   transform: rotate(150deg);
   font-size: 2.4vh;
-  position: fixed; 
-  color: #fff; 
+  position: fixed;
+  color: #fff;
   text-align: center;
   font-weight: 600;
-  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7); 
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
 }
 
 altitude {
   transform: rotate(135deg);
   font-size: 2.4vh;
-  position: fixed; 
-  color: #fff; 
+  position: fixed;
+  color: #fff;
   text-align: center;
   font-weight: 600;
-  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7); 
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
 }
 
 .border {
@@ -200,11 +211,11 @@ altitude {
 
 /* Compass */
 .baseplate {
-  position: relative;
-  margin: 0 auto;
-  top: -0.8vh;
+    position: relative;
+    margin: 0 auto;
+    top: -0.8vh;
 	width: 150px;
-  height: auto;
+    height: auto;
 }
 
 .street-container {
