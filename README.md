@@ -1,8 +1,10 @@
 
-# I TAKE NO CREDITS FOR THIS VISUAL REMAKE
-### The qbcore logo doesn't fit witht the colors but I can't remove it legally
-### If u wanna remove it u can search for the following line and remove it:
+# ALL CREDITS GO TO THE AUTHORS
+## I know, the QBCORE logo doesn't fit with the colors but I can't post without it legally
+### If u wanna use the script without it, go to './html/index.html' search for the following code and remove it:
 ```<img class="brand-logo" align="right" src="./brand-logo.svg"></img>```
+## If you wanna change the colors go to './html/styles.css' and change the rgb values on the top
+### Note: Only created variables for the modified values
 
 # Things you should know:
 * To open the menu in-game the **default key** is **"I"** or you can type **"/menu"**
@@ -32,7 +34,7 @@
 
 # Previews
 
-Original | Remade
+Original | Remake
 :-------:|:------:
 ![menu](https://media.discordapp.net/attachments/397689444972625931/1028827180479807488/unknown.png?width=632&height=702)  |  ![new](https://media.discordapp.net/attachments/397689444972625931/1028826024391221258/unknown.png?width=720&height=402)
 ### all radials

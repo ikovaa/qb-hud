@@ -3,12 +3,9 @@
 
 :root {
     --primary-color: rgba(220, 2, 109, 1);
-    --secondary-color: rgba(220, 2, 109, .7);
-    --tertiary-color: rgba(220, 2, 109, .3);
 
     --first-plain: rgba(35, 39, 42, 1);
-    --second-plain: rgba(35, 39, 42, .5);
-    --background-color: rgb(44, 47, 51);
+    --background-color: rgba(44, 47, 51, 1);
 }
 
 
