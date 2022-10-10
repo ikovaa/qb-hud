@@ -56,21 +56,20 @@
                 <q-splitter v-model="splitterModel" style="height: 50vh;">
                     <template v-slot:before>
                         <q-tabs v-model="tab" active-bg-color="active-tab" inline-label indicator-color="transparent" vertical class="text-tabcolor bg-panel">
-                            <q-tab name="reset" icon="restart_alt" label="RESET" style="height: 5.5vh; padding-left: 1vh; justify-content: start;"></q-tab>
+                            <q-tab name="hud" icon="restart_alt" label="RESET" style="height: 5.5vh; padding-left: 1vh; justify-content: start;"></q-tab>
                             <q-tab name="options" icon="settings" label="OPTIONS" style="height: 5.5vh; padding-left: 1vh; justify-content: start;"></q-tab>
                             <q-tab name="notifications" icon="feedback" label="NOTIFICATIONS" style="height: 5.5vh; padding-left: 1vh; justify-content: start;"></q-tab>
                             <q-tab name="status" icon="insert_emoticon" label="STATUS" style="height: 5.5vh; padding-left: 1vh; justify-content: start;"></q-tab>
                             <q-tab name="vehicle" icon="directions_car" label="VEHICLE" style="height: 5.5vh; padding-left: 1vh; justify-content: start;"></q-tab>
                             <q-tab name="compass" icon="explore" label="COMPASS" style="height: 5.5vh; padding-left: 1vh; justify-content: start;"></q-tab>
                             <q-tab name="cinematic" icon="videocam" label="CINEMATIC" style="height: 5.5vh; padding-left: 1vh; justify-content: start;"></q-tab>
-
                         </q-tabs>
                     </template>
                     <template v-slot:after>
                         <q-tab-panels v-model="tab" animated swipeable vertical transition-prev="jump-up" transition-next="jump-up" class="bg-active-tab">
-                            <q-tab-panel name="reset">
+                            <q-tab-panel name="hud">
                                 <div class="q-mb-md">
-                                    <div class="text-h6 q-mb-md">Reset Hud</div>
+                                    <div class="text-h6 q-mb-md">Reset Hud <img class="brand-logo" align="right" src="./brand-logo.svg"></img></div>
                                     <div class="q-pa-md q-gutter-sm">
                                         <q-btn v-on:click="resetStorage($event)" :loading="progress[0].loading" :percentage="progress[0].percentage" text-color="textbutton" color="bgbutton" @click="startComputing(0)" style="width: 150px"> Reset Settings
                                         <template v-slot:loading> <q-spinner-gears class="on-left"></q-spinner-gears> Resetting... </template></q-btn>
@@ -83,7 +82,7 @@
                             </q-tab-panel>
                             <q-tab-panel name="options">
                                 <div class="q-mb-md">
-                                    <div class="text-h6 q-mb-md">Options</div>
+                                    <div class="text-h6 q-mb-md">Options <img class="brand-logo" align="right" src="./brand-logo.svg"></img></div>
                                     <div class="text-h7">
                                         <q-item borderless tag="label" v-ripple>
                                             <q-item-section avatar>
@@ -117,7 +116,7 @@
                             </q-tab-panel>
                             <q-tab-panel name="notifications">
                                 <div class="q-mb-md">
-                                    <div class="text-h6 q-mb-md">Notifications</div>
+                                    <div class="text-h6 q-mb-md">Notifications <img class="brand-logo" align="right" src="./brand-logo.svg"></img></div>
                                     <div class="text-h7">
                                         <q-checkbox v-on:click="openMenuSounds($event)" label='Menu Sound Effects Enabled' v-model="isOpenMenuSoundsChecked" color="checkbox" val="4" style="display: flex;"></q-checkbox>
                                         <q-checkbox v-on:click="resetHudSounds($event)" label='Reset Hud Sound Effects Enabled' v-model="isResetSoundsChecked" color="checkbox" val="5" style="display: flex;"></q-checkbox>
@@ -130,7 +129,7 @@
                             </q-tab-panel>
                             <q-tab-panel name="status">
                                 <div class="q-mb-md">
-                                    <div class="text-h6 q-mb-md">Status</div>
+                                    <div class="text-h6 q-mb-md">Status <img class="brand-logo" align="right" src="./brand-logo.svg"></img></div>
                                     <div class="text-h7">
                                         <q-checkbox v-on:click="dynamicHealth($event)" label='Show Health always' v-model="isDynamicHealthChecked" color="checkbox" val="10" style="display: flex;"></q-checkbox>
                                         <q-checkbox v-on:click="dynamicArmor($event)" label='Show Armor always' v-model="isDynamicArmorChecked" color="checkbox" val="11" style="display: flex;"></q-checkbox>
@@ -143,7 +142,7 @@
                             </q-tab-panel>
                             <q-tab-panel name="vehicle">
                                 <div class="q-mb-md">
-                                    <div class="text-h6 q-mb-md">Vehicle</div>
+                                    <div class="text-h6 q-mb-md">Vehicle <img class="brand-logo" align="right" src="./brand-logo.svg"></img></div>
                                     <div class="text-h7">
                                         <q-toggle v-on:click="changeFPS($event)" size="lg" keep-color icon-color="toggleicons" color="checkbox" :label="`Speedometer FPS ${isChangeFPSChecked}`" unchecked-icon="60fps" false-value="Synced" true-value="Optimized" checked-icon="30fps" v-model="isChangeFPSChecked"></q-toggle>
                                         <div class="text-h7 q-mb-md-d">Synced FPS option will result in less optimization, but keep your speedometer in real time, however, it will also be more demanding on your machine.</div>
@@ -158,7 +157,7 @@
                             </q-tab-panel>
                             <q-tab-panel name="compass">
                                 <div class="q-mb-md">
-                                    <div class="text-h6 q-mb-md">Compass</div>
+                                    <div class="text-h6 q-mb-md">Compass <img class="brand-logo" align="right" src="./brand-logo.svg"></img></div>
                                     <div class="text-h7">
                                         <q-toggle v-on:click="changeCompassFPS($event)" size="lg" keep-color icon-color="toggleicons" color="checkbox" :label="`Compass FPS ${isChangeCompassFPSChecked}`" unchecked-icon="60fps" false-value="Synced" true-value="Optimized" checked-icon="30fps" v-model="isChangeCompassFPSChecked"></q-toggle>
                                         <div class="text-h7 q-mb-md-d">Synced FPS option will result in less optimization, but keep your compass in real time, however, it will also be more demanding on your machine.</div>
@@ -203,7 +202,7 @@
                             </q-tab-panel>
                             <q-tab-panel name="cinematic">
                                 <div class="q-mb-md">
-                                    <div class="text-h6 q-mb-md">Cinematic Mode</div>
+                                    <div class="text-h6 q-mb-md">Cinematic Mode <img class="brand-logo" align="right" src="./brand-logo.svg"></img></div>
                                     <div class="text-h7">
                                         <q-checkbox v-on:click="cinematicMode($event)" label='Enabled' v-model="isCineamticModeChecked" color="checkbox" val="23" style="display: flex;"></q-checkbox>
                                     </div>

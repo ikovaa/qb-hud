@@ -1,4 +1,9 @@
 
+# I TAKE NO CREDITS FOR THIS VISUAL REMAKE
+### The qbcore logo doesn't fit witht the colors but I can't remove it legally
+### If u wanna remove it u can search for the following line and remove it:
+```<img class="brand-logo" align="right" src="./brand-logo.svg"></img>```
+
 # Things you should know:
 * To open the menu in-game the **default key** is **"I"** or you can type **"/menu"**
 * Your settings will **always** be **stored locally**, so even if you delete the resource it **will** keep your current settings. The **only** way you can wipe the local storage sucessfully is by clicking the **"Reset Settings"** button on the in-game menu
@@ -16,7 +21,7 @@
 ##
 **Q:** How do I enable dev mode?
 
-**A:** Simple! All you have to do is type /admin and navigate through the menu to the last section called "Developer Options" and inside there you should see "Dev Mode", this will keep you invincible and add a cool developer icon in your circles/radials 
+**A:** Simple! All you have to do is type /admin and navigate through the menu to the last section called "Developer Options" and inside there you should see "Dev Mode", this will keep you invincible and add a cool developer icon in your circles/radials
 ##
 
 ##
@@ -26,8 +31,10 @@
 ##
 
 # Previews
-### menu config (this is just a preview more options included than what is shown here)
-![menu](https://user-images.githubusercontent.com/91661118/149598723-b34bb93d-8885-4b3a-a0cc-ab68d756a449.PNG)
+
+Original | Remade
+:-------:|:------:
+![menu](https://media.discordapp.net/attachments/397689444972625931/1028827180479807488/unknown.png?width=632&height=702)  |  ![new](https://media.discordapp.net/attachments/397689444972625931/1028826024391221258/unknown.png?width=720&height=402)
 ### all radials
 ![all radials](https://user-images.githubusercontent.com/91661118/143668930-e9475c53-284c-4054-ad9c-88aa98f76768.png)
 ### dead health
